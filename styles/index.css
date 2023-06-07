@@ -1,0 +1,130 @@
+p, ul, li {
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+a{
+    color: var(--github-color);
+}
+
+img{
+    height: 40px;
+}
+
+.main__div-content{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.main__div-content__div-items{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.main__div-content__heading-autor {
+    text-align: center;
+    font-family: var(--primary-font);
+    font-weight: bold;
+    color: var(--second-color);
+    font-size: 2.25rem;
+    line-height: 56px;
+}
+
+.main__div-content__div-items__div-curriculum,
+.main__div-content__div-items__div-experiences,
+.main__div-content__div-items__div-formation{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.main__div-content__div-items__div-curriculum__heading, 
+.main__div-content__div-items__div-experiences__heading,
+.main__div-content__div-items__div-technologies__heading,
+.main__div-content__div-items__div-formation__heading {
+    font-family: var(--primary-font);
+    font-size: 2.25rem;
+    line-height: 56px;
+}
+
+.main__div-content__div-items__div-curriculum__paragraph {
+    font-family: var(--secondary-font);
+    font-size: 1.5rem;
+    line-height: 36px;
+}
+
+.main__div-content__div-items__div-curriculum__list,
+.main__div-content__div-items__div-experiences__list,
+.main__div-content__div-items__div-formation__list{
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    font-family: var(--secondary-font);
+    font-size: 1.5rem;
+    line-height: 36px;
+    padding-left: 4%;
+}
+
+.main__div-content__div-items__div-technologies{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.main__div-content__div-items__div-technologies__ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 20px;
+}
+.main__div-content__div-items__div-technologies__ul__li{
+    list-style: none;
+}
+
+@media (max-width: 1200px) {
+
+    .main__div-content{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .main__div-content__div-items{
+        gap: 20px;
+    }
+
+    .main__div-content__heading-autor{
+        font-size: 1.2rem;
+        line-height: 40px;
+    }
+
+    .main__div-content__div-items__div-curriculum__heading,
+    .main__div-content__div-items__div-experiences__heading,
+    .main__div-content__div-items__div-technologies__heading,
+    .main__div-content__div-items__div-formation__heading {
+        font-size: 1.2rem;
+        line-height: 50px;
+    }
+
+    .main__div-content__div-items__div-curriculum__paragraph{
+        font-size: 1rem;
+        line-height: 24px;
+    }
+    
+    .main__div-content__div-items__div-curriculum__list,
+    .main__div-content__div-items__div-experiences__list,
+    .main__div-content__div-items__div-formation__list{     
+        font-size: 1rem;
+        line-height: 18px;
+    }
+
+    .main__div-content__div-items__div-technologies{
+        gap: 20px;
+    }
+
+    img{
+        height: 28px;
+    }
+}

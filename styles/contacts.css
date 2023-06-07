@@ -1,0 +1,127 @@
+body{
+    align-items: center;
+}
+
+.div-anchors{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 50vh;
+}
+
+.heading {
+    font-family: var(--primary-font);
+    font-size: 2.25rem;
+    line-height: 56px;
+}
+
+img {
+    width: 40px;
+}
+
+.div-anchors__button {
+    font-family: var(--primary-font);
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    width: 380px;
+    color: var(--first-color);
+    padding: 21.5px 0px;
+    margin: 1%;
+    border-radius: 10px;
+}
+
+.div-anchors__button:active {
+    margin-top: 7px;
+    transform: translateY(10px) ;
+}
+
+.github {
+    background-color: var(--github-color);
+    border-bottom: 3px solid var(--github-hover-color);
+    box-shadow: 0 9px var(--github-hover-color);
+}
+
+.github:active {
+    box-shadow: 0 0px var(--github-hover-color);
+    border-bottom: 0px solid var(--github-hover-color);
+}
+
+.linkedin {
+    background-color: var(--linkedin-color);
+    border-bottom: 3px solid var(--linkedin-hover-color);
+    box-shadow: 0 9px var(--linkedin-hover-color);
+}
+
+.linkedin:active {
+    box-shadow: 0 0px var(--linkedin-hover-color);
+    border-bottom: 0px solid var(--linkedin-hover-color);
+}
+
+.whatsapp {
+    background-color: var(--whatsapp-color);
+    border-bottom: 3px solid var(--whatsapp-hover-color);
+    box-shadow: 0 9px var(--whatsapp-hover-color);
+}
+
+.whatsapp:active {
+    margin-top: 6.7px;
+    box-shadow: 0 0px var(--whatsapp-hover-color);
+    border-bottom: 0px solid var(--whatsapp-hover-color);
+}
+
+@media (max-width: 1200px) {
+
+    .main__section__div-social {
+        display: flex;
+        flex-direction: column;
+        gap: 80px;
+        margin-top: 30px;
+    }
+
+    img {
+        width: 25px;
+    }
+
+    .heading {
+        font-family: var(--primary-font);
+        font-size: 1.5rem;
+        line-height: 36px;
+    }
+
+    .main__section__div-social__div-anchors {
+        gap: 60px;
+    }
+
+    .div-anchors__button {
+        font-family: var(--primary-font);
+        font-size: 1rem;
+        line-height: 20px;
+        width: 250px;
+    }
+
+    .div-anchors__button:active {
+        margin-top: 5.7px;
+        transform: translateY(10px);
+    }
+
+    .div-anchors__button:hover {
+        color: var(--first-color);
+    }
+}
+
+@media (max-height: 600px) {
+    .div-anchors{
+        height: 70vh;
+    }
+}
+
+@media (max-height: 400px) {
+    .div-anchors{
+        height: 80vh;
+    }
+}
